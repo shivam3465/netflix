@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,200;1,300;1,400&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,200;1,300;1,400&family=Ubuntu&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    scroll-behavior: smooth; 
+    color: white;   
+}
+#ham{
+    display: none;
+}
+#banner{
+    width: 100%;
+    height: 30rem;
+    background-color: rgb(0, 0, 0);    
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden; 
+    flex-direction: column;  
+    z-index: 1;   
+    box-sizing: border-box; 
+    >img{                    
+        width: 82%;
+        height: inherit;  
+        cursor: pointer;                     
+    }
+   
+}
+
+.row{
+    padding: 1rem ;
+    padding-bottom: 1.5rem;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;    
+    .cards{
+        overflow-x: auto;        
+        display: flex;        
+        &::-webkit-scrollbar{
+            display: none;
+        } 
+    }
+    h2{
+        padding: 1rem 0rem;
+    }
+    .card{
+        width: 10rem;        
+        margin: 0.6rem;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        &:hover{
+            transition: all 0.1s;
+            transform: translateY(-10px) scale(1.1);    
+            border-radius: 0.3rem;    
+        }       
+    }
+}

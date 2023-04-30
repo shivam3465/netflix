@@ -1,0 +1,83 @@
+@media screen and (max-width: 1052px) and (min-width: 768px){
+    html{
+        font-size: 80%;
+    }
+    #header {
+        main{
+            #nav{
+                margin-left: 1.7rem;
+            }        
+            a{
+                padding: 0.5rem; 
+                font-size: 1.2rem;               
+            }        
+        }
+    }
+    
+}
+@media screen and (max-width: 768px) and (min-width: 578px){
+    html{
+        font-size: 72%;
+    }
+    #header {
+        main{
+            #nav{
+                margin-left: 1rem;
+            }        
+            a{
+                padding: 0.5rem; 
+                font-size: 1.1rem;               
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 578px) and (min-width:0px) {
+    html{
+        font-size: 70%;
+    }
+    #header{
+        font-size: 1rem;        
+        img{
+            height: 5rem;
+            width: 8rem;
+        }
+        justify-content: space-between;
+        main{
+            justify-content:space-between;  
+            margin: none;          
+            svg{
+                position: absolute;
+                right: 0;
+                top: 7rem;
+            }
+        }
+    }
+    #ham{
+        display: initial;
+        font-size: 5.5rem; 
+        cursor: pointer;       
+    }
+    #search{
+        font-size: 1.6rem;
+    }
+    #nav{
+        display: none;
+        margin: 1rem;
+    }
+    #banner{
+        height: 25rem;
+        >img{
+            width: 100%;            
+        }
+    }
+    #searchBar{
+        width: 7rem;
+        height: 1rem;
+    }
+    #searchBox{
+        height: 2rem;
+        width: 18rem;
+    }
+}
